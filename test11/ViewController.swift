@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mylabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func buttonpressed(_ sender: Any) {
+      //  print("hello world")
+        mylabel.text = "hello wolrd"
+    }
+    
+    @IBAction func labelclear(_ sender: Any) {
+        mylabel.text = "   "
+    }
+    
+    @IBAction func changeviewcolor(_ sender: Any) {
+        self.view.backgroundColor = UIColor.white
+    }
 }
 
